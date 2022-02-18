@@ -1,0 +1,936 @@
+/* ############################# GENERAL #################################### */
+
+body {
+	background-color: #eeeeee;
+}
+
+.container {
+    position: relative;
+    min-height: 600px;
+}
+
+.box {
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #dddddd;
+	padding:15px;
+    display: table;
+    width: 100%;
+}
+
+.cajaBordeada {
+    border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid #dddddd;
+	padding: 20px 10px 10px;
+    background-color: #fff;
+    margin: 0px;
+    position: relative;
+}
+
+.half-box {
+    width: 50%;
+    float: left;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#listaSociosControlesContainer {
+	margin: 0 0 20px;
+}
+
+#nav_loader {
+	position: absolute;
+    display: none;
+    right: 10px;
+}
+
+#feedbackContainer,
+.feedbackContainerModal {
+	display: none;
+}
+
+#nav_brand {
+	margin:0 20px 0 10px;
+}
+
+#nav_logout {
+    margin: 0 45px 0 10px;
+}
+
+.socioTag {
+margin: 0 5px 0 0;
+font-weight: normal;
+}
+
+.feedbackIcon {
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.loaderModal{
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+    display: none;
+}
+
+.modal-body h4 {
+    float: left;
+    font-weight: normal;
+    width: 70px;
+    margin: 5px 0 10px;
+}
+
+.modalListaRow {
+    min-height: 40px;
+    display: table;
+}
+
+#headerNavigation {
+    display: none;
+}
+
+.controlesLista {
+    position: relative;
+    min-height: 35px;
+}
+
+.controlesLista button {
+    margin-bottom: 10px;
+}
+
+.totalRegistros {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+/* ############################# SOCIO #################################### */
+
+.socioDatosField h5 {
+	float:left;
+	width:180px;
+}
+
+.socioDatosField input {
+	float: left;
+margin: 5px;
+height: 28px;
+}
+
+.socioDatosField {
+	min-height: 40px;
+}
+
+#pagoBtnCancelar ,
+#gastoBtnCancelar ,
+#socioBtnSalvar {
+	width:100px;
+	float:right;
+	margin: 0 20px;
+}
+
+.socioIconBtnTitle {
+    color: #999;
+    font-size: 23px;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+
+.socioDatosValor p {
+    margin-bottom: 0.5rem;
+}
+
+.socioDatosValor input[type=checkbox] {
+	margin: -4px 10px 0;
+}
+
+.socioDatosValor label {
+	height: 30px;
+}
+
+.socioDatosValor textarea {
+	height: 130px;
+	max-height: 130px;
+	width: 290px;
+	max-width: 290px;
+}
+
+#socioDatosValorTags {
+    margin: 0 0 0 180px;
+}
+
+#socioLabelEstado {
+    position: absolute;
+    top: 9px;
+    right: 0px;
+    font-size: 17px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.labelEstadoActivo {
+    background: #8DB600;
+}
+
+.labelEstadoSuspendido {
+    background: #E32636;
+}
+
+.socioHeader {
+    position: relative;
+    display: table;
+    width: 100%;
+}
+
+#socioBtnEditarDatos {
+}
+
+.btnBoxBottomRight {
+    position: absolute;
+    right: 10px;
+    width: auto;
+    bottom: 10px;
+}
+
+/* ############################# LISTA SOCIOS #################################### */
+
+#listaSociosModalImportarNumero {
+    width:100px;
+}
+
+#socioArmarListaMailsModalCommentLista {
+    margin: 5px 15px;
+    float: left;
+}
+
+#socioArmarListaMailsModalLista {
+    margin: 10px 0px 0 100px;
+    height: 150px;
+    max-height: 150px;
+    font-size: 12px;
+    width: 250px;
+}
+
+#socioArmarListaMailsModalGruposTable input[type=checkbox] {
+    margin: 12px 5px 0 0;
+}
+
+#socioArmarListaMailsModalGruposTable {
+    width: 80%;
+    margin: 10px 0 15px 100px;
+}
+
+#socioArmarListaMailsModalGruposTable label {
+    margin: 7px 10px 0;
+    font-size: 15px;
+}
+
+#socioArmarListaMailsModalGruposTable td {
+    width: 50%;
+}
+
+#listaSociosModalEstadosTexto {
+    width: 60%;
+    max-width: 60%;
+    height: 150px;
+    max-height: 150px;
+}
+
+/* ############################# PAGO #################################### */
+
+#pagoLabelEstado {
+    position: absolute;
+    top: 9px;
+    right: -31px;
+    font-size: 18px;
+    padding: 8px;
+    display: none ;
+}
+
+.labelCancelado {
+    background: #E32636;
+}
+
+/* ############################# GASTO #################################### */
+
+#gastoLabelEstado {
+    position: absolute;
+    top: 9px;
+    right: -31px;
+    font-size: 18px;
+    padding: 8px;
+    display: none ;
+}
+
+#exportarListaDropdown {
+    position: absolute;
+    top: 0px;
+    margin: 0 10px;
+}
+
+.red-arrow {
+    color: #e03a3a;
+}
+
+.green-arrow {
+    color: #70c641;
+}
+
+.totales {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    margin: 0 0 10px;
+    padding: 10px;
+    min-height: 30px;
+    background-color: #fff;
+    display: table;
+    width: 100%;
+}
+
+.totales .campo {
+    float: left;
+    width: 25%;
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+.charts-containers {
+    background-color: #fff;
+    margin: 0 0 30px;
+    padding: 20px;
+}
+
+.logo_login {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #555;
+    text-align: center;
+    display: table;
+    padding: 22px 0;
+    color: #888;
+    bottom: 0;
+}
+
+.footer a {
+    color: #888;
+}
+
+.footer .logo {
+    width: 50px;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.footer .copy{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 11px;
+    margin: 0 10px;
+}
+
+.login-name {
+    color: #777;
+    text-align: center;
+    font-family: arial;
+    font-size: 20px;
+    margin: 30px 0;
+}
+
+.lista-socios-show {
+    width: auto;
+    display: inline-block;
+}
+
+.table-datos {
+    margin-top: 40px;
+}
+
+.datos-codigo-row {
+    font-weight: bold;
+    border-bottom: 1px solid #aaa;
+    padding: 25px 50px 5px 0px;
+    color: #555;
+    min-width: 200px;
+}
+
+.datos-valor-row {
+    border-bottom: 1px solid #aaa;
+    padding: 25px 25px 5px 0px;
+    min-width: 200px;
+}
+
+.datos-edit-row {
+    border-bottom: 1px solid #aaa;
+    padding: 25px 0 5px;
+}
+
+.datos-input {
+    padding: 15px 8px 13px;
+    margin: 0;
+}
+
+.botoneraTopContainer {
+    margin-bottom: 10px;
+}
+
+.socio-deuda {
+    margin-bottom: 10px;
+    display: table;
+}
+
+.socioListaContenedor {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.listaGrandeContenedor {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+#index-warning-emails,
+#index-warning-fechanac,
+#index-warning-doc {
+    display: none;
+    margin-bottom: 10px;
+}
+
+#macropago_tabla_socios td{
+    width: 33%;
+}
+
+.macropago_socio_chk{
+    margin-left: 0 !important;
+}
+
+.container_macropago_socios {
+    max-height: 170px;
+    overflow-y: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.macroTabla td.right{
+    border-right: 1px dotted #ccc;
+    border-left: 1px dotted #ccc;
+    padding: 5px;
+}
+
+.macroTabla td.left{
+    border-right: 1px dotted #ccc;
+    padding: 5px;
+}
+
+.macroTabla select {
+    width: auto;
+}
+
+.macroTabla .fieldname {
+    font-size: 12px;
+    padding: 5px 0 0;
+}
+
+.macroTabla {
+    width: 100%;
+}
+
+.admin-setting-box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.admin-setting-box .btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.admin-setting-box p {
+    max-width: 75%;
+}
+
+#select-torta-gastos {
+
+}
+
+.rowNuevoPagoRazon {
+    border-bottom: 1px solid #eee;
+    width: 100%;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.rowDescuentoNuevoPago {
+    width: 100%;
+}
+
+.rowFechaNuevoPago {
+    width: 100%;
+}
+
+.rowFechaNuevoPago .caja{
+    display: table;
+    float: left;
+    width: 50%;
+}
+
+.rowFechaNuevoPago h4{
+    width: auto;
+}
+
+.rowFechaNuevoPago select{
+    margin: 0 0 0 20px;
+    width: auto;
+}
+
+.botoneraBottomContainer {
+    margin-top: 10px;
+}
+
+.cantina .vista_current {
+    display: none;
+}
+
+.cantina .vista_totales,
+.banco .vista_totales {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 12px 15px;
+    background-color: #fff;
+    height: 98px;
+    margin-bottom: 20px;
+    display: table;
+    width: 100%;
+}
+
+.cantina .vista_totales .caja_tipo,
+.banco .vista_totales .caja_tipo {
+    float: left;
+    margin: 0 150px 0 0;
+}
+
+.cantina .vista_totales .caja_tipo h4,
+.banco .vista_totales .caja_tipo h4 {
+    margin: 0;
+}
+
+.cantina .vista_totales .caja_tipo h2,
+.banco .vista_totales .caja_tipo h2 {
+    margin: 5px 0;
+}
+
+.cantina .scroll_container,
+.banco .scroll_container {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 12px 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    max-height: 230px;
+    overflow-y: auto;
+}
+
+.banco .scroll_container {
+    max-height: 350px;
+}
+
+.cantina .turno_controls,
+.banco .turno_controls {
+    position: absolute;
+    top: 17px;
+    right: 0;
+    display: table;
+}
+
+#boton_cerrar_turno {
+    float: right;
+    position: relative;
+    top: 45px;
+}
+
+.cantina .tag_turno {
+    margin: 0 0 10px 0;
+    padding: 5px 6px 3px;
+    border: 1.5px solid #aaa;
+    display: none;
+    border-radius: 5px;
+}
+
+.cantina .tag_turno h5 {
+    margin: 0;
+}
+
+.cantina .tag_turno .badge {
+    position: relative;
+    top: -2px;
+}
+
+.cantina .botones .btn,
+.banco .botones .btn {
+    margin-right: 5px;
+    font-size: 12pt;
+}
+
+#listaIngresarPagoModal input,
+#identificarPagoModal input {
+    min-height: 25px;
+}
+
+#listaIngresarPagoModal .modal-body h4,
+#retiroModal .modal-body h4,
+#identificarPagoModal .modal-body h4 {
+    margin: 6px 0 10px;
+    font-size: 12pt;
+    float: left;
+    font-weight: normal;
+    width: 69pt;
+    text-align: right;
+}
+
+#listaIngresarPagoModal .modalListaRow,
+#identificarPagoModal .modalListaRow {
+    margin-bottom: 5px;
+}
+
+.cantina .cancel_pago {
+    width: 20px;
+    cursor: pointer;
+}
+
+.cantina #socioIngresarPagoSocio,
+.banco #socioIngresarPagoSocio {
+    margin-top: 0px;
+}
+
+.inputCurrency {
+    position: absolute;
+    left: 99px;
+}
+
+.cantina .tituloSocio,
+.banco .tituloSocio {
+    font-weight: bolder !important;
+}
+
+.cantina .modalListaRow,
+.banco .modalListaRow {
+    position: relative;
+}
+
+.labelSocioTransaction {
+    background-color: black;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+
+.cantina .botonesTop {
+    display: table;
+    float: right;
+}
+
+.botonTop {
+    display: none;
+    font-size: 12pt;
+    margin-left: 10px;
+}
+
+#botonRetiroCaja img {
+    width: 45px;
+    margin-top: 4px;
+}
+
+.identificar_pago {
+    width: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.banco .pagoIdentificado {
+    cursor: pointer;
+}
+
+.banco .lista_last_transactions {
+    font-size: small;
+}
+
+.banco table {
+    font-size: small;
+}
+
+.cajaBancoIdentificarGasto .pills,
+.cantinaIngresarGasto .pills,
+.cantinaIngresarIngreso .pills {
+    float: left;
+    margin: 5px 0 0 20px;
+    max-width: 410px;
+}
+
+.cajaBancoIdentificarGasto .pills .badge,
+.cantinaIngresarGasto .pills .badge,
+.cantinaIngresarIngreso .pills .badge {
+    cursor: pointer;
+    margin: 0px 5px 5px 0px;
+}
+
+.banco .vista_transactions_noidentificadas .montoTransaction {
+    color: red;
+}
+
+.banco .valorRestanteNoIdentificado {
+    color: red;
+}
+
+.banco .rowTransactionBanco {
+    cursor: pointer;
+}
+
+.banco .labelSocioTransactionRazon {
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+
+.banco .lista_transactions_noidentificadas .montoTransaction {
+    color: red;
+}
+
+.banco .montoSplitTotal {
+    text-decoration: underline;
+}
+
+.banco .montoSplitIdentificado {
+    color: black;
+}
+
+.banco .pagoAsociado {
+    min-width: 90px;
+}
+
+.controlesLista button {
+
+}
+
+.section {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.section .inlineTitleRight {
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+
+.controlesFilaItem {
+    margin-right: 10px;
+    height: 38px;
+}
+
+.controlesFilaItem button {
+    height: 38px;
+}
+
+.paginationTopTable {
+    margin-top: 10px;
+}
+
+.paginationTopTable ul {
+    margin-bottom: 0;
+}
+
+.nav-fill .nav-item .nav-link, 
+.nav-justified .nav-item .nav-link {
+    background-color: #eee;
+}
+
+.nav-fill .nav-item .nav-link, 
+.nav-justified .nav-item .nav-link {
+    background-color: #eee;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #0d6efd;
+}
+
+.cantina .nav-fill .nav-item, .nav-fill>.nav-link,
+.banco .nav-fill .nav-item, .nav-fill>.nav-link {
+    margin: 10px 5px;
+}
+
+.banco .socioRazonSelect,
+.cantina .socioRazonSelect {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.banco .socioRazonSelects:first-child,
+.cantina .socioRazonSelects:first-child {
+    margin-left: 0;
+}
+
+.cantina .botonesPagos .btn {
+    margin: 0 0 10px;
+}
+
+.rowMonto {
+    min-width: 100px;
+}
+
+.pillsPrecargados .btn {
+    margin-bottom: 5px;
+}
+
+.btn-columna {
+    width: auto;
+    margin-bottom: 5px;
+}
+
+#socioDatosValorEstado,
+.suscripcion_estado {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-left: calc(var(--bs-gutter-x) * .5);
+    height: 24px;
+    font-size: .9rem;
+}
+
+.pago_item {
+    cursor: pointer;
+    width: 100%;
+}
+
+.pago_item .fecha {
+    float: right;
+}
+
+.pago_item .monto {
+    float: left;
+}
+
+.loaderSocios {
+    margin-left: 10px;
+}
+
+.socio_vinculado {
+    width: 150px;
+    text-align: center;
+    background-color: #eee;
+    border-radius: 5px;
+    box-shadow: 2px 2px #ccc;
+    padding: 10px 10px 0px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color:#333;
+}
+
+.socio_vinculado .socio_vinculado_avatar {
+    width: 40px;
+    margin-bottom: 10px;
+    opacity: .7;
+}
+
+.bd-pink-200 {
+    color: #000;
+    background-color: #efadce;
+}
+
+.bd-pink-500 {
+    color: #fff;
+    background-color: #d63384;
+}
+
+.bd-pink-600 {
+    color: #fff;
+    background-color: #ab296a;
+}
+
+.bd-pink-700 {
+    color: #fff;
+    background-color: #801f4f;
+}
+
+.bd-pink-800 {
+    color: #fff;
+    background-color: #561435;
+}
+
+.bd-pink-900 {
+    color: #fff;
+    background-color: #2b0a1a;
+}
+
+.socio_list_obligacion_checked {
+    height: 20px;
+    margin-right: 5px;
+}
+
+#listaSociosTabla .obligacion_socio .detalle {
+    position: relative;
+    top: 2px;
+}
+
+@media (max-width: 600px) 
+{
+    .hideInMobile {
+        display: none;
+    }
+
+    .cantina .botonesTop {
+        float: none;
+        margin: -10px 0 5px;
+        width: 100%;
+    }
+
+    .botonTop {
+        font-size: 15pt;
+        margin: 0 0 10px;
+        width: 100%;
+    }
+
+    .cantina .scroll_container, 
+    .banco .scroll_container {
+        padding: 0;
+    }
+
+    #boton_cerrar_turno {
+        float: none;
+        top: auto;
+    }
+
+    .cantina .vista_totales, 
+    .banco .vista_totales {
+        height: 85px;
+    }
+
+    .cantina .vista_totales .caja_tipo, 
+    .banco .vista_totales .caja_tipo {
+        margin: 0px;
+    }
+
+    .cantina .vista_totales .saldo_turno,
+    .banco .vista_totales .saldo_turno {
+        margin-left: 8%;
+    }
+
+    .cantina .botonesPagos .btn {
+        font-size: 15pt;
+        width: 100%;
+    }
+}

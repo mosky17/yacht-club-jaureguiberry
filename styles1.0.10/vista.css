@@ -1,0 +1,120 @@
+#socioLabelEstado {
+    cursor: auto;
+}
+
+#headerNavigation {
+    display: block;
+}
+
+.habilitacion {
+    margin: 20px 0 50px;
+}
+
+.habilitacion p {
+    font-size: 25px;
+    float: left;
+    width: 600px;
+    white-space: pre-wrap;
+    line-height: 30px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.habilitacion img {
+    float: left;
+    width: 80px;
+    padding: 10px 20px 10px 10px;
+}
+
+.nohabilitado {
+    width: 100%;
+}
+
+.habilitado {
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .navbar-inner {
+        min-height: 120px;
+    }
+    .navbar .brand {
+        padding: 48px 15px 10px;
+        font-size: 50px;
+    }
+    #nav_loader {
+        margin: 40px 20px;
+    }
+    .socioHeader h2 {
+        font-size: 50px;
+    }
+    .container {
+        margin-top: 150px;
+    }
+    #socioLabelEstado {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    .box {
+        margin: 15px 0 30px;
+        border: 1px solid #aaa;
+    }
+    .half-box {
+        width: 100%;
+        float: none;
+    }
+    .socioDatosField {
+        padding: 15px;
+    }
+    .socioDatosField h4 {
+        width: 35%;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+        line-height: 33px;
+    }
+    .socioDatosValor {
+        float: left;
+        width: 65%;
+    }
+    .socioDatosValor p {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .socioListaContenedor td {
+        font-size: 25px;
+        padding: 15px 8px;
+    }
+    .socioListaContenedor th {
+        font-size: 25px;
+        padding: 15px 8px;
+    }
+    .socioListaContenedor .label {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 5px 10px;
+    }
+
+    .socio-deuda {
+        margin-bottom: 15px;
+        font-size: 40px;
+        padding: 25px;
+    }
+
+    .habilitacion img {
+        width: 12%;
+        padding: 3%;
+    }
+
+    .habilitacion p {
+        font-size: 37px;
+        width: 75%;
+        line-height: 45px;
+        padding: 40px 0;
+    }
+}
